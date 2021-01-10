@@ -1,4 +1,4 @@
-#+title: lsp-mc README
+#+title: LSP Multiple Cursors
 
 #+begin_html
   <p align="center">
