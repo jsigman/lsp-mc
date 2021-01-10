@@ -1,0 +1,13 @@
+#+title: lsp-mc README
+
+#+begin_html
+  <p align="center">
+  <img width="256px" src="images/emacs.png" alt="Banner">
+  </p>
+#+end_html
+
+* About
+  This repository contains a minor mode for [[https://www.gnu.org/software/emacs/emacs.html][emacs]] editing, =lsp-mc=
+* In use
+  TBC
+  
