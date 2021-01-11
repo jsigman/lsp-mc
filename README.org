@@ -2,18 +2,15 @@
 
 #+begin_html
   <p align="center">
-  <img width="512px" src="images/screencast.gif" alt="Banner">
+  <img width="822px" src="images/screencast.gif" alt="Banner">
   </p>
 #+end_html
 
 * About
-  This repository contains a minor mode for [[https://www.gnu.org/software/emacs/emacs.html][emacs]] editing, =lsp-mc=
+  This repository contains a minor mode for [[https://www.gnu.org/software/emacs/emacs.html][emacs]] editing, =lsp-mc=. The minor mode should be activated with [[https://github.com/emacs-lsp/lsp-mode/][lsp-mode]], and implements a function for using [[https://github.com/magnars/multiple-cursors.el][multiple-cursors]] on highlighted text. This can be much more useful than just searching and replacing raw text, and is lightning fast to activate, requiring a single keystroke.
   
-* In use
-  TBD. In this section show some animations of use.
-
 * Installation
-  Easiest way to install right now is with =straight.el=
+  The easiest way to install right now is with =straight.el=
 #+begin_src emacs-lisp :tangle yes
 (straight-use-package
  '(lsp-mc :type git :host github :repo "jsigman/lsp-mc"))
@@ -21,6 +18,13 @@
 (add-hook 'lsp-mode-hook 'lsp-mc-mode)
 #+end_src  
 
+* Usage
+
+  By default, =lsp-mc-/mark-all-highlighted= is bound to =M-S=
+  
+
 * Related
   This is very similar in ways to [[https://github.com/emacs-lsp/lsp-mode/blob/master/lsp-iedit.el][lsp-iedit.el]]. I find =multiple-cursors= to be more intuitive and pleasing to use than =iedit=.
 
+*** Acknowledgments
+    Thanks to [[https://github.com/yyoncho][yyoncho]] for providing some basics for this function
