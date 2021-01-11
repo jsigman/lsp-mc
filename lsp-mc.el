@@ -1,8 +1,7 @@
 (defvar lsp-mc/keymap nil "Keymap while lsp-mc is active.")
 (unless lsp-mc/keymap
   (setq lsp-mc/keymap (make-sparse-keymap))
-  (define-key lsp-mc/keymap (kbd "M-S") 'lsp-mc/mark-all-highlighted)
-  )
+  (define-key lsp-mc/keymap (kbd "M-S") 'lsp-mc/mark-all-highlighted))
 
 (require 'dash)
 (require 'lsp)
