@@ -2,7 +2,7 @@
 
 #+begin_html
   <p align="center">
-  <img width="256px" src="images/emacs.png" alt="Banner">
+  <img width="512px" src="images/screencast.gif" alt="Banner">
   </p>
 #+end_html
 
