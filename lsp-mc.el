@@ -4,6 +4,9 @@
   (define-key lsp-mc/keymap (kbd "M-S") 'lsp-mc/mark-all-highlighted)
   )
 
+(require 'dash)
+(require 'lsp)
+(require 'multiple-cursors)
 
 ;;;###autoload
 (define-minor-mode lsp-mc-mode "Minor mode for activating multiple cursors on every instance of symbols highlighted by the LSP server"
@@ -41,6 +44,6 @@
   (mc/maybe-multiple-cursors-mode))
 
 ;; This command will never run for all cursors, it breaks if so.
-(add-to-list 'mc/cmds-to-run-once 'mc-lsp/mark-all-highlighted)
+(add-to-list 'mc/cmds-to-run-once 'lsp-mc/mark-all-highlighted)
 
 (provide 'lsp-mc)
