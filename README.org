@@ -8,6 +8,19 @@
 
 * About
   This repository contains a minor mode for [[https://www.gnu.org/software/emacs/emacs.html][emacs]] editing, =lsp-mc=
-* In use
-  TBC
   
+* In use
+  TBD. In this section show some animations of use.
+
+* Installation
+  Easiest way to install right now is with =straight.el=
+#+begin_src emacs-lisp :tangle yes
+(straight-use-package
+ '(lsp-mc :type git :host github :repo "jsigman/lsp-mc"))
+(require 'lsp-mc)
+(add-hook 'lsp-mode-hook 'lsp-mc-mode)
+#+end_src  
+
+* Related
+  This is very similar in ways to [[https://github.com/emacs-lsp/lsp-mode/blob/master/lsp-iedit.el][lsp-iedit.el]]. I find =multiple-cursors= to be more intuitive and pleasing to use than =iedit=.
+

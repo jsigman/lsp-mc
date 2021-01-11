@@ -42,3 +42,5 @@
 
 ;; This command will never run for all cursors, it breaks if so.
 (add-to-list 'mc/cmds-to-run-once 'mc-lsp/mark-all-highlighted)
+
+(provide 'lsp-mc)
